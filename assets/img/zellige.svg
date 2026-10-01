@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+  <!-- eight-point star (khatim) tile, used as a subtle repeating overlay -->
+  <g fill="none" stroke="#ffffff" stroke-width="2">
+    <polygon points="110,10 130,70 190,50 150,110 190,170 130,150 110,210 90,150 30,170 70,110 30,50 90,70"/>
+    <polygon points="110,50 122,98 170,110 122,122 110,170 98,122 50,110 98,98"/>
+    <circle cx="110" cy="110" r="14"/>
+    <polygon points="0,0 20,0 0,20"/><polygon points="220,0 200,0 220,20"/>
+    <polygon points="0,220 20,220 0,200"/><polygon points="220,220 200,220 220,200"/>
+  </g>
+</svg>
