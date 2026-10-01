@@ -104,24 +104,17 @@
 
   /* ---------- Fees ---------- */
   const F = S.fees || { packages: [], extras: [], includes: [] };
-  const cur = F.currency || "€";
   setHTML("#fees-grid", (F.packages || []).map((p) => `
     <div class="col-md-6 col-xl-4"><div class="card-soft fee-card">
       <div class="head"><h5>${esc(p.name)}</h5><small>${esc(p.days)}</small></div>
-      <div class="table-responsive"><table class="table table-clean">
-        <thead><tr><th></th><th class="text-end">Early</th><th class="text-end">Late</th></tr></thead>
-        <tbody>${p.rows.map((r) => `<tr><td>${esc(r.type)}</td><td>${cur}${r.early}</td><td>${cur}${r.late}</td></tr>`).join("")}</tbody>
-      </table></div></div></div>`).join(""));
-  setText("#fees-early-label", F.earlyLabel || "Early");
-  setText("#fees-late-label", F.lateLabel || "Late");
-  setHTML("#fees-extras", (F.extras || []).map((x) => `<li>${esc(x.label)} — <strong>${cur}${x.price}</strong></li>`).join(""));
+      <div class="card-body"><p class="mb-0">Regular and student fees to be announced.</p></div></div></div>`).join(""));
+  setHTML("#fees-extras", (F.extras || []).map((x) => `<li>${esc(x.label)}</li>`).join(""));
   setHTML("#fees-includes", (F.includes || []).map((x) => `<li>${esc(x)}</li>`).join(""));
 
   /* ---------- Sponsorship tiers ---------- */
   setHTML("#tiers-grid", (S.sponsorTiers || []).map((t) => `
     <div class="col-sm-6 col-xl-3"><div class="card-soft tier" style="border-top-color:${esc(t.colour)}"><div class="card-body">
       <h4>${esc(t.name)}</h4>
-      <div class="price">€${Number(t.price).toLocaleString("en")} <small>+ VAT</small></div>
       <ul class="check-list mt-3">${t.benefits.map((b) => `<li>${esc(b)}</li>`).join("")}</ul>
     </div></div></div>`).join(""));
 

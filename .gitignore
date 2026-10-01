@@ -3,3 +3,6 @@ versions/
 logo-options/
 assets/img/logo-concepts/
 *.zip
+QR-*.png
+QR-*.svg
+georabat2027-dns.txt

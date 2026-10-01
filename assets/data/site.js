@@ -175,38 +175,17 @@ window.SITE = {
     { name: "Riads in the Medina (various)", area: "Medina / Udayas", stars: 0, distance: "≈ 7 km", url: "" }
   ],
 
-  /* ---------- Registration fees (EUR, TBC – seeded from Sofia 2026) ---------- */
+  /* ---------- Registration (prices to be announced) ---------- */
   fees: {
-    currency: "€",
-    earlyLabel: "Early (until 20 July 2027)",
-    lateLabel: "Late / on-site",
     packages: [
-      {
-        name: "Joint event (all days)", days: "3D GeoInfo + SDSC",
-        rows: [
-          { type: "Regular", early: 650, late: 750 },
-          { type: "Student", early: 400, late: 450 }
-        ]
-      },
-      {
-        name: "3D GeoInfo only", days: "Days 2–3",
-        rows: [
-          { type: "Regular", early: 300, late: 350 },
-          { type: "Student", early: 200, late: 250 }
-        ]
-      },
-      {
-        name: "SDSC only", days: "Days 3–5",
-        rows: [
-          { type: "Regular", early: 350, late: 450 },
-          { type: "Student", early: 250, late: 300 }
-        ]
-      }
+      { name: "Joint event (all days)", days: "3D GeoInfo + SDSC" },
+      { name: "3D GeoInfo only", days: "Days 2–3" },
+      { name: "SDSC only", days: "Days 3–5" }
     ],
     extras: [
-      { label: "Accompanying person (social events only)", price: 150 },
-      { label: "Each additional paper (beyond the first)", price: 150 },
-      { label: "Workshop / tutorial (Day 1, Monday)", price: 50 }
+      { label: "Accompanying person (social events only)" },
+      { label: "Each additional paper (beyond the first)" },
+      { label: "Workshop / tutorial (Day 1, Monday)" }
     ],
     includes: [
       "Access to all sessions of the selected package",
@@ -217,15 +196,15 @@ window.SITE = {
     ]
   },
 
-  /* ---------- Sponsorship tiers (EUR, TBC – seeded from Sofia 2026) ---------- */
+  /* ---------- Sponsorship tiers (prices on request) ---------- */
   sponsorTiers: [
-    { name: "Platinum", price: 10000, colour: "#7f8c9a",
+    { name: "Platinum", colour: "#7f8c9a",
       benefits: ["Prominent logo on website, programme and stage backdrop", "Plenary presentation slot (15 min)", "3 full registrations", "Exhibition table", "Attendee list"] },
-    { name: "Gold", price: 7000, colour: "#d4a017",
+    { name: "Gold", colour: "#d4a017",
       benefits: ["Logo on website, programme and materials", "2 full registrations", "Exhibition table", "Attendee list"] },
-    { name: "Silver", price: 5000, colour: "#a9b1b8",
+    { name: "Silver", colour: "#a9b1b8",
       benefits: ["Logo on website and programme", "1 full registration", "Exhibition table", "Attendee list"] },
-    { name: "Bronze", price: 2000, colour: "#b5532a",
+    { name: "Bronze", colour: "#b5532a",
       benefits: ["Logo on website and communications", "1 full registration", "Attendee list"] }
   ],
 
