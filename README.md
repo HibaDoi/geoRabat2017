@@ -31,6 +31,9 @@ Double-click `index.html`, or run `python -m http.server 8080` in this folder an
 Open `assets/data/site.js`, change the values and reload. Keep the JavaScript syntax: strings in quotes,
 items separated by commas.
 
+After changing `main.css`, `main.js` or `site.js`, raise the `?v=` number on their links in `index.html`
+(for example `?v=1.1` to `?v=1.2`) so visitors' browsers fetch the new file instead of a cached copy.
+
 - Chairs and keynotes: while every name is "To be announced" (or the keynote list is empty), the page
   shows one sentence instead of empty cards. Add real names and they appear as a list, with an optional
   `photo`.
