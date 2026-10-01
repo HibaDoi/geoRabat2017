@@ -1,216 +1,235 @@
 /* =====================================================================
-   3D GeoInfo and SDSC 2027, Rabat
-   All editable content lives here. Edit, save, reload index.html.
-   Deadlines, fees and sponsorship prices are provisional: they were
-   seeded from the Sofia 2026 edition shifted by one year. The page
-   says so once per table; there are no per-row badges.
-   Writing style: plain sentences, no "·" separators, no dashes as
-   punctuation. En dashes only inside ranges (4–8, 800–1000).
+   3D GeoInfo | SDSC 2027 – Rabat
+   ---------------------------------------------------------------------
+   ALL EDITABLE CONTENT LIVES HERE.
+   Organisers: edit the values below, save, and reload index.html.
+   No build step is needed. Items marked "TBC" are provisional and were
+   seeded from the Sofia 2026 edition shifted by one year.
    ===================================================================== */
 
 window.SITE = {
 
   /* ---------- Basic event facts ---------- */
   event: {
-    pageTitle: "3D GeoInfo and SDSC 2027, Rabat",
+    shortTitle: "3D GeoInfo | SDSC 2027",
+    title: "22nd International 3D GeoInfo Conference & 11th International Smart Data and Smart Cities Conference",
     dates: "4–8 October 2027",
-    datesShort: "4–8.10.2027",
+    datesNote: "Monday 4 to Friday 8 October",
     city: "Rabat, Morocco",
     hostShort: "IAV Hassan II",
-    host: "Institut Agronomique et Vétérinaire Hassan II",
+    host: "Institut Agronomique et Vétérinaire Hassan II (IAV Hassan II)",
     address: "Madinat Al Irfane, B.P. 6202, Rabat-Instituts, 10101 Rabat, Morocco",
-    coords: "33.978° N, 6.864° W",
-    email: "contact@3dgeoinfo-sdsc2027.org",          // placeholder: replace with the real mailbox
-    conftool: "https://www.conftool.org/3dgeoinfo-sdsc2027/", // placeholder: create the ConfTool instance
+    email: "contact@3dgeoinfo-sdsc2027.org",          // TBC – replace with the real mailbox
+    conftool: "https://www.conftool.org/3dgeoinfo-sdsc2027/", // TBC – create the ConfTool instance
     hashtag: "#GeoRabat2027",
+    // Map centre for the venue (approximate – adjust if needed)
     map: { lat: 33.9784, lon: -6.8639, zoom: 15 }
   },
 
-  /* ---------- Key deadlines, in date order (provisional) ---------- */
+  /* ---------- Key deadlines (TBC – seeded from Sofia 2026 + 1 year) ---------- */
   deadlines: [
-    { label: "Extended abstracts", date: "9 April 2027" },
-    { label: "Full papers for the ISPRS Annals", date: "9 April 2027" },
-    { label: "Notification of acceptance", date: "18 June 2027" },
-    { label: "Early registration closes", date: "20 July 2027" },
-    { label: "Camera-ready papers", date: "23 July 2027" },
-    { label: "Author registration closes", date: "6 September 2027" },
-    { label: "Conference, with workshops on Monday", date: "4–8 October 2027" }
+    { label: "Abstract submission (extended abstracts)", date: "9 April 2027", tbc: true },
+    { label: "Full paper submission (ISPRS Annals track)", date: "9 April 2027", tbc: true },
+    { label: "Notification of acceptance", date: "18 June 2027", tbc: true },
+    { label: "Camera-ready papers", date: "23 July 2027", tbc: true },
+    { label: "Early-bird registration closes", date: "20 July 2027", tbc: true },
+    { label: "Author registration deadline", date: "6 September 2027", tbc: true },
+    { label: "Workshops & tutorials (Day 1)", date: "Monday 4 October 2027" },
+    { label: "Conference", date: "Monday 4 – Friday 8 October 2027" }
   ],
 
   /* ---------- Topics ---------- */
   topics: {
     common: [
-      "3D and 4D data acquisition and sensing",
-      "BIM and GIS integration",
+      "3D/4D data acquisition and sensing technologies",
+      "BIM–GIS integration",
       "Urban digital twins",
-      "Spatial data infrastructures for cities",
-      "Machine learning on urban and 3D data",
-      "Standards and open data: CityGML, CityJSON, IFC, OGC APIs"
+      "Smart cities and geospatial data infrastructures",
+      "GeoAI: machine learning for urban and 3D data",
+      "Standards, interoperability and open data (CityGML, CityJSON, IFC, OGC APIs)"
     ],
     geoinfo: [
-      "Laser scanning, photogrammetry, UAV and mobile mapping",
+      "3D/4D data collection: laser scanning, photogrammetry, UAV and mobile mapping",
       "Point cloud processing, classification and 3D reconstruction",
-      "3D modelling, generalisation and levels of detail",
+      "3D data modelling, generalisation and level of detail",
       "Data quality, validation, metadata and provenance",
-      "3D spatial databases and indexing",
-      "Fusion of 3D, BIM, IoT and remote sensing data",
+      "3D data management, spatial databases and indexing",
+      "Information fusion of 3D, BIM, IoT and remote-sensing data",
       "Semantic enrichment, ontologies and knowledge graphs",
-      "Visualisation, virtual and augmented reality",
-      "Indoor modelling and navigation",
-      "Underground, utility and infrastructure models",
-      "3D cadastre and land administration",
-      "Uses in planning, energy, noise, flooding, facility management and heritage"
+      "3D visualisation, virtual, augmented and mixed reality",
+      "Indoor modelling, indoor and multimodal navigation",
+      "Underground, utilities and infrastructure modelling",
+      "3D cadastre, land administration and legal 3D objects",
+      "Applications: urban planning, energy, noise, flood and disaster management, facility management, cultural heritage"
     ],
     sdsc: [
-      "GIS and urban informatics",
-      "City analytics and data science",
-      "Mobility and people-flow data",
-      "Citizen participation and volunteered geographic information",
-      "Privacy, security and ethics of urban data",
-      "Open data platforms and city dashboards",
-      "Sensor networks and real-time monitoring",
-      "Disaster risk and resilience",
-      "Machine learning for urban systems",
-      "Drones for city monitoring",
-      "Smart buildings and districts",
-      "Energy efficiency and net-zero cities",
-      "Circular economy",
-      "Transport, autonomous vehicles and logistics",
+      "GIS, urban informatics and ICT for smart cities",
+      "Data science and city analytics",
+      "Mobility, people-flow and transportation data",
+      "Citizen participation, crowdsourcing and volunteered geographic information",
+      "Privacy, security and ethics of urban data and digital twins",
+      "Open data, urban data platforms and city dashboards",
+      "Sensor networks, IoT and real-time city monitoring",
+      "Disaster, risk and resilience management",
+      "Artificial intelligence and machine learning for urban systems",
+      "Drones and remote monitoring of the city",
+      "Smart homes, smart buildings and smart districts",
+      "Energy efficiency, net-zero and climate-neutral cities",
+      "Circular economy and sustainable urban development",
+      "Smart transportation, autonomous systems and smart logistics",
       "Spatio-temporal analysis and urban modelling",
-      "Urban health and the 15-minute city"
+      "Urban health, wellbeing and the 15-minute city"
     ]
   },
 
-  /* ---------- People ----------
-     While a name is "To be announced", the page shows one sentence
-     instead of empty portrait cards. */
+  /* ---------- Committees ---------- */
   chairs: [
-    { role: "general chair", name: "To be announced", affiliation: "IAV Hassan II", photo: "" },
-    { role: "3D GeoInfo co-chair", name: "To be announced", affiliation: "ISPRS", photo: "" },
-    { role: "SDSC co-chair", name: "To be announced", affiliation: "the Urban Data Management Society", photo: "" }
+    { role: "General Chair", name: "To be announced", affiliation: "IAV Hassan II, Morocco", photo: "" },
+    { role: "3D GeoInfo Co-Chair", name: "To be announced", affiliation: "ISPRS WG IV – 3D GeoInfo", photo: "" },
+    { role: "SDSC Co-Chair", name: "To be announced", affiliation: "Urban Data Management Society (UDMS)", photo: "" }
   ],
-  peopleNote: "Chairs and committees will be announced in early 2027.",
   organisingCommittee: [
-    // { name: "Full Name", affiliation: "IAV Hassan II" },
+    // { name: "Full Name", affiliation: "IAV Hassan II, Morocco" },
   ],
   scientificCommittee: [
     // { name: "Full Name", affiliation: "Institution, Country" },
   ],
 
-  /* ---------- Keynotes and workshops ---------- */
+  /* ---------- Keynotes & workshops ---------- */
   keynotes: [
-    // { name: "Full Name", affiliation: "Institution", talk: "Talk title", photo: "assets/img/people/name.jpg" },
+    { name: "To be announced", affiliation: "", talk: "Keynote speakers will be announced in 2027", photo: "" },
+    { name: "To be announced", affiliation: "", talk: "", photo: "" },
+    { name: "To be announced", affiliation: "", talk: "", photo: "" }
   ],
-  keynotesNote: "Keynote speakers will be announced in spring 2027.",
   workshops: [
     {
       title: "Call for workshops and tutorials",
-      description: "Monday 4 October is set aside for half-day and full-day workshops and hands-on tutorials. They are open to everyone registered for the conference. To propose one, send a single page with the title, organisers, format and expected audience."
+      chairs: "Open call",
+      description: "Proposals for half-day or full-day workshops and hands-on tutorials on Day 1 (Monday 4 October) are welcome. Send a one-page proposal (title, organisers, format, expected audience) to the organising committee.",
+      tbc: true
     }
   ],
 
-  /* ---------- Programme (structure only, provisional) ---------- */
+  /* ---------- Draft programme (structure only – TBC) ---------- */
   programme: [
     {
-      day: "Monday", date: "4 Oct", label: "Workshops",
+      day: "Day 1", date: "Mon 4 Oct", label: "Workshops & tutorials",
       items: [
-        { time: "09:00–12:30", title: "Workshops and tutorials, morning", where: "IAV Hassan II" },
-        { time: "14:00–17:30", title: "Workshops and tutorials, afternoon", where: "IAV Hassan II" },
-        { time: "17:30–19:00", title: "Early registration", where: "Registration desk" }
+        { time: "09:00 – 12:30", title: "Workshop / tutorial slot 1", where: "IAV Hassan II" },
+        { time: "12:30 – 14:00", title: "Lunch", where: "" },
+        { time: "14:00 – 17:30", title: "Workshop / tutorial slot 2", where: "IAV Hassan II" },
+        { time: "17:30 – 19:00", title: "Early registration", where: "Registration desk" }
       ]
     },
     {
-      day: "Tuesday", date: "5 Oct", label: "3D GeoInfo",
+      day: "Day 2", date: "Tue 5 Oct", label: "3D GeoInfo",
       items: [
-        { time: "08:30–09:30", title: "Registration" },
-        { time: "09:30–10:00", title: "Opening", where: "Main auditorium" },
-        { time: "10:00–11:00", title: "Keynote", where: "Main auditorium" },
-        { time: "11:30–13:00", title: "Parallel sessions", rooms: ["Room A: acquisition and reconstruction", "Room B: 3D data management"] },
-        { time: "14:00–15:30", title: "Parallel sessions", rooms: ["Room A: BIM and GIS integration", "Room B: semantics and machine learning"] },
-        { time: "16:00–17:30", title: "Parallel sessions", rooms: ["Room A: visualisation and XR", "Room B: applications"] },
-        { time: "19:00", title: "Welcome reception" }
+        { time: "08:30 – 09:30", title: "Registration", where: "Registration desk" },
+        { time: "09:30 – 10:00", title: "Opening ceremony", where: "Main auditorium" },
+        { time: "10:00 – 11:00", title: "Keynote 1", where: "Main auditorium" },
+        { time: "11:30 – 13:00", title: "Parallel sessions – 3D data acquisition & reconstruction / 3D data management", where: "Rooms A & B" },
+        { time: "14:00 – 15:30", title: "Parallel sessions – BIM–GIS integration / Semantic enrichment & GeoAI", where: "Rooms A & B" },
+        { time: "16:00 – 17:30", title: "Parallel sessions – 3D visualisation & XR / Applications", where: "Rooms A & B" },
+        { time: "19:00", title: "Welcome reception", where: "TBC" }
       ]
     },
     {
-      day: "Wednesday", date: "6 Oct", label: "Joint day",
+      day: "Day 3", date: "Wed 6 Oct", label: "Joint day",
       items: [
-        { time: "09:00–10:00", title: "Keynote", where: "Main auditorium" },
-        { time: "10:30–12:30", title: "Joint session on urban digital twins for African and Mediterranean cities", where: "Main auditorium" },
-        { time: "14:00–15:30", title: "Panel on machine learning in city data", where: "Main auditorium" },
-        { time: "16:00–17:30", title: "Government, industry and sponsor session", where: "Main auditorium" },
-        { time: "20:00", title: "Conference dinner" }
+        { time: "09:00 – 10:00", title: "Keynote 2", where: "Main auditorium" },
+        { time: "10:30 – 12:30", title: "Common session – Urban digital twins for African and Mediterranean cities", where: "Main auditorium" },
+        { time: "14:00 – 15:30", title: "Panel – GeoAI-ready smart cities", where: "Main auditorium" },
+        { time: "16:00 – 17:30", title: "Government, industry & sponsor session", where: "Main auditorium" },
+        { time: "20:00", title: "Gala dinner", where: "TBC" }
       ]
     },
     {
-      day: "Thursday", date: "7 Oct", label: "SDSC",
+      day: "Day 4", date: "Thu 7 Oct", label: "SDSC",
       items: [
-        { time: "09:00–10:00", title: "Keynote", where: "Main auditorium" },
-        { time: "10:30–12:30", title: "Parallel sessions", rooms: ["Room A: city analytics", "Room B: mobility and transport"] },
-        { time: "13:30–14:30", title: "Posters", where: "Foyer" },
-        { time: "14:30–16:00", title: "Parallel sessions", rooms: ["Room A: sensing and monitoring", "Room B: energy and net-zero cities"] },
-        { time: "16:30–17:30", title: "Keynote", where: "Main auditorium" }
+        { time: "09:00 – 10:00", title: "Keynote 3", where: "Main auditorium" },
+        { time: "10:30 – 12:30", title: "Parallel sessions – City analytics / Mobility & transportation", where: "Rooms A & B" },
+        { time: "13:30 – 14:30", title: "Poster session", where: "Foyer" },
+        { time: "14:30 – 16:00", title: "Parallel sessions – IoT & monitoring / Energy & net-zero cities", where: "Rooms A & B" },
+        { time: "16:30 – 17:30", title: "Keynote 4", where: "Main auditorium" }
       ]
     },
     {
-      day: "Friday", date: "8 Oct", label: "SDSC and closing",
+      day: "Day 5", date: "Fri 8 Oct", label: "SDSC & closing",
       items: [
-        { time: "09:00–10:30", title: "Parallel sessions", rooms: ["Room A: participation and open data", "Room B: resilience and disaster risk"] },
-        { time: "11:00–12:00", title: "Awards and closing", where: "Main auditorium" },
-        { time: "14:00–18:00", title: "Technical tour of the Kasbah of the Udayas, the Chellah and the Bouregreg valley", where: "Buses leave from IAV Hassan II" }
+        { time: "09:00 – 10:30", title: "Parallel sessions – Citizen participation & open data / Resilience & disaster management", where: "Rooms A & B" },
+        { time: "11:00 – 12:00", title: "Best paper awards & closing ceremony", where: "Main auditorium" },
+        { time: "14:00 – 18:00", title: "Technical tour – Kasbah of the Udayas, Chellah and the Bouregreg valley", where: "Departure from IAV Hassan II" }
       ]
     }
   ],
 
-  /* ---------- Accommodation (distances from IAV Hassan II, approximate) ---------- */
+  /* ---------- Accommodation (distances approximate, from IAV Hassan II) ---------- */
   hotels: [
-    { name: "Sofitel Rabat Jardin des Roses", area: "Souissi", category: "5-star", distance: "3 km", url: "https://all.accor.com/" },
-    { name: "Rabat Marriott Hotel", area: "Souissi", category: "5-star", distance: "3 km", url: "https://www.marriott.com/" },
-    { name: "The View Hotel Rabat", area: "Hay Riad", category: "5-star", distance: "3 km", url: "" },
-    { name: "Ibis Rabat Agdal", area: "Agdal", category: "3-star", distance: "3 km", url: "https://all.accor.com/" },
-    { name: "Le Diwan Rabat, MGallery", area: "City centre", category: "4-star", distance: "5 km", url: "https://all.accor.com/" },
-    { name: "ONOMO Hotel Rabat Terminus", area: "Rabat Ville station", category: "4-star", distance: "5 km", url: "" },
-    { name: "Hôtel Tour Hassan Palace", area: "City centre", category: "5-star", distance: "6 km", url: "" },
-    { name: "Riads in the medina", area: "Medina and Udayas", category: "Guesthouses", distance: "7 km", url: "" }
+    { name: "Sofitel Rabat Jardin des Roses", area: "Souissi", stars: 5, distance: "≈ 3 km", url: "https://all.accor.com/" },
+    { name: "Rabat Marriott Hotel", area: "Souissi", stars: 5, distance: "≈ 3 km", url: "https://www.marriott.com/" },
+    { name: "The View Hotel Rabat", area: "Hay Riad", stars: 5, distance: "≈ 3 km", url: "" },
+    { name: "Ibis Rabat Agdal", area: "Agdal", stars: 3, distance: "≈ 3 km", url: "https://all.accor.com/" },
+    { name: "Le Diwan Rabat – MGallery", area: "City centre", stars: 4, distance: "≈ 5 km", url: "https://all.accor.com/" },
+    { name: "ONOMO Hotel Rabat Terminus", area: "Rabat Ville station", stars: 4, distance: "≈ 5 km", url: "" },
+    { name: "Hôtel Tour Hassan Palace", area: "City centre", stars: 5, distance: "≈ 6 km", url: "" },
+    { name: "Riads in the Medina (various)", area: "Medina / Udayas", stars: 0, distance: "≈ 7 km", url: "" }
   ],
 
-  /* ---------- Registration fees in euros (provisional) ---------- */
+  /* ---------- Registration fees (EUR, TBC – seeded from Sofia 2026) ---------- */
   fees: {
     currency: "€",
-    earlyLabel: "Until 20 July 2027",
-    lateLabel: "After 20 July and on site",
+    earlyLabel: "Early (until 20 July 2027)",
+    lateLabel: "Late / on-site",
     packages: [
-      { name: "Full week", days: "Monday to Friday, both conferences",
-        rows: [ { type: "Regular", early: 650, late: 750 }, { type: "Student", early: 400, late: 450 } ] },
-      { name: "3D GeoInfo", days: "Tuesday and Wednesday",
-        rows: [ { type: "Regular", early: 300, late: 350 }, { type: "Student", early: 200, late: 250 } ] },
-      { name: "SDSC", days: "Wednesday to Friday",
-        rows: [ { type: "Regular", early: 350, late: 450 }, { type: "Student", early: 250, late: 300 } ] }
+      {
+        name: "Joint event (all days)", days: "3D GeoInfo + SDSC",
+        rows: [
+          { type: "Regular", early: 650, late: 750 },
+          { type: "Student", early: 400, late: 450 }
+        ]
+      },
+      {
+        name: "3D GeoInfo only", days: "Days 2–3",
+        rows: [
+          { type: "Regular", early: 300, late: 350 },
+          { type: "Student", early: 200, late: 250 }
+        ]
+      },
+      {
+        name: "SDSC only", days: "Days 3–5",
+        rows: [
+          { type: "Regular", early: 350, late: 450 },
+          { type: "Student", early: 250, late: 300 }
+        ]
+      }
     ],
     extras: [
-      { label: "Accompanying person, social events only", price: 150 },
-      { label: "Each additional paper after the first", price: 150 }
+      { label: "Accompanying person (social events only)", price: 150 },
+      { label: "Each additional paper (beyond the first)", price: 150 },
+      { label: "Workshop / tutorial (Day 1, Monday)", price: 50 }
     ],
     includes: [
-      "All sessions on the days of your package, and Monday's workshops",
-      "Publication of one accepted paper in the ISPRS Annals or Archives",
-      "Coffee and lunch on each conference day",
-      "The welcome reception on Tuesday and the dinner on Wednesday, if your package covers those days"
+      "Access to all sessions of the selected package",
+      "Publication of one accepted paper in ISPRS Annals or Archives",
+      "Coffee breaks and lunches",
+      "Welcome reception (Day 2) and gala dinner (Day 3) for joint and multi-day packages",
+      "Conference materials"
     ]
   },
 
-  /* ---------- Sponsorship (euros, provisional) ---------- */
+  /* ---------- Sponsorship tiers (EUR, TBC – seeded from Sofia 2026) ---------- */
   sponsorTiers: [
-    { name: "Platinum", price: 10000, colour: "#0b2a1d",
-      benefits: ["Logo on the website, programme and stage", "A 15-minute plenary slot", "Three registrations", "Exhibition table", "Attendee list"] },
-    { name: "Gold", price: 7000, colour: "#007136",
-      benefits: ["Logo on the website and programme", "Two registrations", "Exhibition table", "Attendee list"] },
-    { name: "Silver", price: 5000, colour: "#7aa58a",
-      benefits: ["Logo on the website and programme", "One registration", "Exhibition table", "Attendee list"] },
-    { name: "Bronze", price: 2000, colour: "#b41c1b",
-      benefits: ["Logo on the website", "One registration", "Attendee list"] }
+    { name: "Platinum", price: 10000, colour: "#7f8c9a",
+      benefits: ["Prominent logo on website, programme and stage backdrop", "Plenary presentation slot (15 min)", "3 full registrations", "Exhibition table", "Attendee list"] },
+    { name: "Gold", price: 7000, colour: "#d4a017",
+      benefits: ["Logo on website, programme and materials", "2 full registrations", "Exhibition table", "Attendee list"] },
+    { name: "Silver", price: 5000, colour: "#a9b1b8",
+      benefits: ["Logo on website and programme", "1 full registration", "Exhibition table", "Attendee list"] },
+    { name: "Bronze", price: 2000, colour: "#b5532a",
+      benefits: ["Logo on website and communications", "1 full registration", "Attendee list"] }
   ],
 
-  /* ---------- Organisations ---------- */
+  /* ---------- Logos (put files in assets/img/ and set `logo`) ---------- */
   supporters: [
     { name: "ISPRS", full: "International Society for Photogrammetry and Remote Sensing", url: "https://www.isprs.org/", logo: "" },
     { name: "UDMS", full: "Urban Data Management Society", url: "https://udms.net/", logo: "" },
@@ -221,17 +240,17 @@ window.SITE = {
     // { name: "Company", tier: "Gold", url: "https://…", logo: "assets/img/sponsors/company.png" }
   ],
   journalPartners: [
-    { name: "ISPRS International Journal of Geo-Information", note: "special issue planned", url: "https://www.mdpi.com/journal/ijgi" },
-    { name: "Geomatics", note: "special issue planned", url: "https://www.mdpi.com/journal/geomatics" }
+    { name: "ISPRS International Journal of Geo-Information (MDPI)", note: "Special issue – to be confirmed", url: "https://www.mdpi.com/journal/ijgi" },
+    { name: "Geomatics (MDPI)", note: "Special issue – to be confirmed", url: "https://www.mdpi.com/journal/geomatics" }
   ],
 
   /* ---------- Past editions (footer) ---------- */
   pastEditions: [
-    { name: "Sofia 2026", detail: "21st 3D GeoInfo, 10th SDSC and 14th LADM workshop", url: "https://conference.gate-ai.eu/GeoSofia2026/" },
-    { name: "Kashiwa 2025", detail: "20th 3D GeoInfo and 9th SDSC", url: "https://www.csis.u-tokyo.ac.jp/3d_geoinfo_sdsc_2025/overview.html" },
-    { name: "Vigo 2024", detail: "19th 3D GeoInfo, with EG-ICE", url: "https://3dgeoinfoeg-ice.webs.uvigo.es/" },
-    { name: "Athens 2024", detail: "8th SDSC", url: "https://tudelft3d.github.io/sdsc2024/" },
-    { name: "Munich 2023", detail: "18th 3D GeoInfo", url: "https://www.3dgeoinfo.org/3dgeoinfo/" },
-    { name: "Sydney 2022", detail: "17th 3D GeoInfo and 7th SDSC", url: "https://www.sdsc3dgeoinfo.unsw.edu.au/" }
+    { year: 2026, label: "Sofia, Bulgaria – 21st 3D GeoInfo, 10th SDSC & 14th LADM/3D LA", url: "https://conference.gate-ai.eu/GeoSofia2026/" },
+    { year: 2025, label: "Kashiwa, Japan – 20th 3D GeoInfo & 9th SDSC", url: "https://www.csis.u-tokyo.ac.jp/3d_geoinfo_sdsc_2025/overview.html" },
+    { year: 2024, label: "Vigo, Spain – 19th 3D GeoInfo (with EG-ICE)", url: "https://3dgeoinfoeg-ice.webs.uvigo.es/" },
+    { year: 2024, label: "Athens, Greece – 8th SDSC", url: "https://tudelft3d.github.io/sdsc2024/" },
+    { year: 2023, label: "Munich, Germany – 18th 3D GeoInfo", url: "https://www.3dgeoinfo.org/3dgeoinfo/" },
+    { year: 2022, label: "Sydney, Australia – 17th 3D GeoInfo & 7th SDSC", url: "https://www.sdsc3dgeoinfo.unsw.edu.au/" }
   ]
 };

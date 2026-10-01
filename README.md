@@ -5,28 +5,18 @@ Smart Data and Smart Cities Conference (SDSC), Rabat, Morocco, 4–8 October 202
 
 ## Design
 
-The page is laid out like a surveyor's drawing set. Each section is a numbered sheet with a title strip:
-sheet number, title and one real fact. The hero shows Bab Oudaya, the gate of the Kasbah of the Udayas,
-as a schematic 3D city model; visitors can switch it between LoD0 (footprint), LoD1 (blocks) and LoD2
-(battlements and arch).
-
-- Type: Newsreader for reading, IBM Plex Mono for dates, times, figures and labels.
-- Colour: deep green `#0B2A1D` as ink, IAV green `#007136` for line work, IAV red `#B41C1B` only for
-  the river line in the drawing, the rule above the title block and the logo.
-- Sheets: 01 hero, 02 About, 03 Call for papers, 04 Programme, 05 People, 06 Coming to Rabat,
-  07 Registration, 08 Partners. Contact is in the footer.
-
-Writing rules used on the page: plain sentences, no "·" separators, no dashes as punctuation (en dashes only
-inside ranges such as 4–8), no stock phrases, no star shapes or star characters.
+This is version 1, "Kasbah blue": a full-width Rabat photo hero with a centred title, boxed cards with
+icons, and 21 sections modelled on GeoSofia 2026. Colours are Kasbah blue, terracotta and gold; type is
+Raleway and Roboto. Other design versions are kept locally in `versions/` and are not published.
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `index.html` | The page and its prose. The logo and the gate drawing are inline SVG. |
+| `index.html` | The page and its prose. |
 | `assets/data/site.js` | All structured content: dates, deadlines, topics, people, programme, hotels, fees, sponsorship, organisations, past editions. Edit this first. |
 | `assets/css/main.css` | Layout and styling. |
-| `assets/js/main.js` | Fills the page from `site.js`, the level-of-detail buttons, day tabs and header behaviour. |
+| `assets/js/main.js` | Fills the page from `site.js`, day tabs and header behaviour. |
 | `assets/img/logo.svg`, `logo-dark.svg` | Official logo for pale and dark backgrounds. The lettering is converted to outlines, so no font is needed. |
 | `assets/img/favicon.svg` | The mark alone, for the browser tab. |
 | `assets/img/hero-bg.jpg` | Venue photo shown in the Rabat sheet. Alternates: `hero-alt-*.jpg`. |
